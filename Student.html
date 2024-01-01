@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Students Portal</title>
+    
+    <link rel="stylesheet" href="./Student.css">
+
+
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/2.1.2/sweetalert.min.js"
+        integrity="sha512-AA1Bzp5Q0K1KanKKmvN/4d3IRKVlv9PYgwFPvm32nPO6QS8yH1HO7LbgB1pgiOxPtfeg5zEn2ba64MUcqJx6CA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script src="sweetalert2.all.min.js" type="text/html"></script>
+
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+</head>
+
+<body>
+    <div class="header">
+        <h4>The Students Page</h4>
+    </div>
+    <div class="container">
+        <div class="upper-btn-box">
+
+            <div class="left-box">
+                <input type="text" id="search-id" placeholder="Enter Student Status">
+                <button id="search-btn">Student Status</button>
+            </div>
+            <div class="right-box">
+                <button class="ease2" id="add-btn"> <i class="fa fa-plus"></i> &nbsp; Add Student </button>
+                
+              
+            </div>
+        </div>
+        <div class="table-box">
+            <table cellspacing="0">
+                <tr>
+                    <th>Sr.</th>
+                    <th>Id</th>
+                    <th>Name</th>
+                    <th>Age</th>
+                    <th>Mobile </th>
+                    <th>School</th>
+                    <th >Student Status</th>
+                    <th>Action</th>
+                </tr>
+               
+                
+                <tbody id="table-data">
+
+                </tbody>
+            </table>
+        </div>
+        <div class="modal">
+            <i class="fa fa-times-circle close-icon"></i>
+
+            <div class="right-modal">
+                <form id="register-form"  autocomplete="off">
+                    <div class="input-box">
+                        <label for="id">Id:</label>
+                        <input type="text" id="id" required >
+                    </div><br>
+
+                    <div class="input-box">
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" required >
+                    </div><br>
+
+                    <div class="input-box">
+                        <label for="age">Age:</label>
+                        <input type="age" id="age" required >
+                    </div><br>
+
+                    <div class="input-box">
+                        <label for="mobile">Mobile:</label>
+                        <input type="Mobile" id="mobile" maxlength="10" required >
+                    </div><br>
+
+                    <div class="input-box">
+                        <label for="school">School Name:</label>
+                        <input type="text" id="school" required >
+                    </div><br>
+                    <div class="input-box">
+                        
+                 <label>Student Status:</label>
+                
+                   <select name="status" id="status"> 
+                    <option value="select">Select</option>
+                      <option>Pursuing</option>
+                        <option>Discontinued</option>
+                    </select>
+                    </div> <br><br>
+                   
+                    <div class="input-box">
+                        <button id="register-btn">Add Student</button>
+                        <button id="update-btn" disabled="disabled">Update</button>
+                    </div>
+
+                </form>
+
+            </div>
+        </div>
+
+    </div>
+
+    <script src="Student.js"></script>
+
+</body>
+
+</html>
